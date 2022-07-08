@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('content')
+@section('h1','Data Transaksi')
     <section class="content">
         <div class="container-fluid">
             <div class="row">
@@ -79,7 +80,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Create</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -91,7 +92,7 @@
                             <div class="form-group">
                                 <label class="font-weight-bold">NAMA</label>
                                 <select class="form-control" name="ps">
-                                    <option>Select Item</option>
+                                    <option>Select Pasien</option>
                                     @foreach ($data2 as $key => $value)
                                         <option value="{{ $value }}" {{ $key == $value ? 'selected' : '' }}>
                                             {{ $value }}
@@ -102,7 +103,7 @@
                             <div class="form-group">
                                 <label class="font-weight-bold">Tindakan</label>
                                 <select class="form-control" name="tdk">
-                                    <option>Select Item</option>
+                                    <option>Select Tindakan</option>
                                     @foreach ($data4 as $key => $value)
                                         <option value="{{ $value }}" {{ $key == $value ? 'selected' : '' }}>
                                             {{ $value }}
@@ -114,7 +115,7 @@
                             <div class="form-group">
                                 <label class="font-weight-bold">Obat</label>
                                 <select class="form-control" name="obt">
-                                    <option>Select Item</option>
+                                    <option>Select Obat</option>
                                     @foreach ($data3 as $key => $value)
                                         <option value="{{ $value }}" {{ $key == $value ? 'selected' : '' }}>
                                             {{ $value }}

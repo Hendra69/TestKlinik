@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('content')
+@section('h1','Data Wilayah')
     <section class="content">
         <div class="container-fluid">
             <div class="row">

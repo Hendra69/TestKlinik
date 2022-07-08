@@ -22,7 +22,7 @@
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="../../index2.html" class="h1"><b>SeLamat Datang</b><br>Di Web Klinik </a>
+                <a href="#" class="h1"><b>SeLamat Datang</b><br>Di Web Klinik </a>
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Silahkan Login</p>

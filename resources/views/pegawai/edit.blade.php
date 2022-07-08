@@ -11,7 +11,7 @@
                             @method('PUT')
 
                             <div class="form-group">
-                            <label class="font-weight-bold">NAMA</label>
+                            <label class="font-weight-bold">Nama</label>
                             <input type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" value="{{ old('nama',$data->nama) }}" placeholder="Masukkan Nama">
                         
                             <!-- error message untuk title -->
@@ -35,7 +35,7 @@
 
                         <div class="form-group">
                             <label class="font-weight-bold">Telepon</label>
-                            <input type="number" class="form-control @error('tlp') is-invalid @enderror" name="tlp" value="{{ old('tlp',$data->tlp) }}" placeholder="Masukkan Telepon">
+                            <input type="number" class="form-control @error('tlp') is-invalid @enderror" name="tlp" value="{{ old('tlp',$data->tlp) }}" placeholder="Masukkan No Telepon">
                         
                             <!-- error message untuk title -->
                             @error('tlp')
@@ -49,15 +49,15 @@
                         <label for="jenis_kelamin">Jenis Kelamin :</label> <br>
                     <div class="form-check form-check-inline">
                         <label for="jk">
-                            <input type="radio" name="jk" value="L" id="jk" {{$data->jk == 'L'? 'checked' : ''}} >Laki-Laki
-                            <input type="radio" name="jk" value="P" id="jk" {{$data->jk == 'P'? 'checked' : ''}} >Perempuan
+                            <input type="radio" name="jk" value="L" id="jk" {{$data->jk == 'Laki-Laki'? 'checked' : ''}} >Laki-Laki
+                            <input type="radio" name="jk" value="P" id="jk" {{$data->jk == 'Perempuan'? 'checked' : ''}} >Perempuan
                         </label>
                         </div>
                 </div>
 
                         <div class="form-group">
                             <label class="font-weight-bold">Tanggal Lahir</label>
-                            <input type="date" class="form-control @error('tgl') is-invalid @enderror" name="tgl" value="{{ old('tgl',$data->tgl) }}" placeholder="Masukkan Jabatab">
+                            <input type="date" class="form-control @error('tgl') is-invalid @enderror" name="tgl" value="{{ old('tgl',$data->tgl) }}" placeholder="Masukkan Tanggal Lahir">
                         
                             <!-- error message untuk title -->
                             @error('tgl')

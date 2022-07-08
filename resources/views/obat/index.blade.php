@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('content')
+@section('h1','Data Obat')
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-md-12">

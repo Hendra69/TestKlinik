@@ -5,9 +5,7 @@
             <div class="col-md-12">
                 <div class="card border-0 shadow rounded">
                     <div class="card-body">
-                      
-                
-                    <div class="card-body">
+                        <div class="card-body">
                             <table id="example2" class="table table-bordered table-hover">
                                 <thead>
                                     <thead>
@@ -15,7 +13,7 @@
                                             <th scope="col">Nama Pasien</th>
                                             <th scope="col">Jenis Tindakan</th>
                                             <th scope="col">Harga</th>
-                                            
+
                                         </tr>
                                     </thead>
                                 <tbody>
@@ -24,17 +22,13 @@
                                             <td>{{ $a->ps }}</td>
                                             <td>{{ $a->tdk }}</td>
                                             <td>{{ $a->hrg }}</td>
-                                            @endforeach
-</tr>
-                                
-</tbody>
-                            
+                                    @endforeach
+                                    </tr>
 
-                       
+                                </tbody>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-@endsection
+    @endsection

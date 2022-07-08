@@ -39,14 +39,14 @@ class TindakanController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'pas'      => 'required',
+          'pas'    =>'required',
             'tdk'       =>'required',
             'wak'       => 'required',
             
            ]);
 
            Tindakan::create([
-            'pas'      => $request->pas,
+           'pas'=> $request->pas,
             'tdk'       => $request->tdk,
             'wak'       => $request->wak,
            
@@ -90,7 +90,7 @@ class TindakanController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'pas'      => 'required',
+            'pas' =>'required',
             'tdk'       =>'required',
             'wak'       => 'required',
            ]);

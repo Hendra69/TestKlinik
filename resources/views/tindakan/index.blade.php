@@ -18,7 +18,7 @@
                                 <thead>
                                     <thead>
                                         <tr>
-                                            <th scope="col">Nama Pasien</th>
+                                            <th scope="col">Nama Tindakan</th>
                                             <th scope="col">Jenis Tindakan</th>
                                             <th scope="col">Tanggal&Waktu</th>
                                             <th scope="col">AKSI</th>
@@ -81,9 +81,9 @@
                         <form action="{{ route('tindakan.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
-                                <label class="font-weight-bold">NAMA</label>
+                                <label class="font-weight-bold">Nama Tindakan</label>
                                 <input type="text" class="form-control @error('pas') is-invalid @enderror" name="pas"
-                                    value="{{ old('pas') }}" placeholder="Masukkan Nama">
+                                    value="{{ old('pas') }}" placeholder="Masukkan Nama Tindakan" >
 
                                 <!-- error message untuk title -->
                                 @error('pas')
@@ -95,7 +95,7 @@
                             <div class="form-group">
                                 <label class="font-weight-bold">Tindakan</label>
                                 <input type="text" class="form-control @error('tdk') is-invalid @enderror" name="tdk"
-                                    value="{{ old('tdk') }}" placeholder="Masukkan Jabatab">
+                                    value="{{ old('tdk') }}" placeholder="Masukkan Tindakan">
 
                                 <!-- error message untuk title -->
                                 @error('tdk')
@@ -108,7 +108,7 @@
                             <div class="form-group">
                                 <label class="font-weight-bold">Tanggal</label>
                                 <input type="date" class="form-control @error('wak') is-invalid @enderror" name="wak"
-                                    value="{{ old('wak') }}" placeholder="Masukkan nilai">
+                                    value="{{ old('wak') }}" placeholder="Masukkan Tanggal">
 
                                 <!-- error message untuk title -->
                                 @error('wak')

@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('content')
+@section('h1','Data Pegawai')
     <section class="content">
         
         <div class="container-fluid">
-        <h1 class="m-0">Data Pegawai</h1>
             <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -80,7 +80,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Create Pegawai</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -129,8 +129,8 @@
                             <div class="form-group">
                                 <div class="form-check form-check-inline">
                         <label for="jk">
-                            <input type="radio" name="jk" value="L" id="jk">Laki-Laki
-                            <input type="radio" name="jk" value="P" id="jk" selected>Perempuan
+                            <input type="radio" name="jk" value="Laki-Laki" id="jk">Laki-Laki
+                            <input type="radio" name="jk" value="Perempuan" id="jk" selected>Perempuan
                         </label>
                         </div>
                             </div>
