@@ -23,7 +23,7 @@
                         </div>
                         <div class="form-group">
                             <label class="font-weight-bold">Alamat</label>
-                            <input type="text" class="form-control @error('alt') is-invalid @enderror" name="alt" value="{{ old('alt',$data->alt) }}" placeholder="Masukkan Jabatab">
+                            <input type="text" class="form-control @error('alt') is-invalid @enderror" name="alt" value="{{ old('alt',$data->alt) }}" placeholder="Masukkan Alamat">
                         
                             <!-- error message untuk title -->
                             @error('alt')
@@ -35,7 +35,7 @@
 
                         <div class="form-group">
                             <label class="font-weight-bold">Telepon</label>
-                            <input type="number" class="form-control @error('tlp') is-invalid @enderror" name="tlp" value="{{ old('tlp',$data->tlp) }}" placeholder="Masukkan nilai">
+                            <input type="number" class="form-control @error('tlp') is-invalid @enderror" name="tlp" value="{{ old('tlp',$data->tlp) }}" placeholder="Masukkan Telepon">
                         
                             <!-- error message untuk title -->
                             @error('tlp')
@@ -46,20 +46,18 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="font-weight-bold">Jenis Kelamin</label>
-                            <input type="text" class="form-control @error('jk') is-invalid @enderror" name="jk" value="{{ old('jk',$data->jk) }}" placeholder="Masukkan Jabatab">
-                        
-                            <!-- error message untuk title -->
-                            @error('jk')
-                                <div class="alert alert-danger mt-2">
-                                    {{ $message }}
-                                </div>
-                            @enderror
+                        <label for="jenis_kelamin">Jenis Kelamin :</label> <br>
+                    <div class="form-check form-check-inline">
+                        <label for="jk">
+                            <input type="radio" name="jk" value="L" id="jk" {{$data->jk == 'L'? 'checked' : ''}} >Laki-Laki
+                            <input type="radio" name="jk" value="P" id="jk" {{$data->jk == 'P'? 'checked' : ''}} >Perempuan
+                        </label>
                         </div>
+                </div>
 
                         <div class="form-group">
                             <label class="font-weight-bold">Tanggal Lahir</label>
-                            <input type="text" class="form-control @error('tgl') is-invalid @enderror" name="tgl" value="{{ old('tgl',$data->tgl) }}" placeholder="Masukkan Jabatab">
+                            <input type="date" class="form-control @error('tgl') is-invalid @enderror" name="tgl" value="{{ old('tgl',$data->tgl) }}" placeholder="Masukkan Jabatab">
                         
                             <!-- error message untuk title -->
                             @error('tgl')

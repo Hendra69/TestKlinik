@@ -90,11 +90,10 @@ class WilayahController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'nama'      => 'required',
-            'alt'       => 'required',
-            'tlp'       => 'required',
-            'jk'        => 'required',
-            'tgl'       => 'required',
+            'kota'      => 'required',
+            'kc'       => 'required',
+            'kb'       => 'required',
+            'dh'        => 'required',
            ]);
            $data= Wilayah::findOrFail($id);
            $data->update($request->except((['_token','submit'])));

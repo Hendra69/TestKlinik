@@ -33,15 +33,16 @@
                                             <td>{{ $d->kb }}</td>
                                             <td>{{ $d->dh }}</td>
                                             <td>
-
-                                                <form action="{{ route('wilayah.destroy', $d->id) }}" method="POST"
-                                                    onclick="return confirm('Apakah Anda Yakin Menghapus Data?');">
-                                                    <a class="btn btn-info btn-sm"
+                                                <a class="btn btn-info btn-sm"
                                                         href="{{ route('wilayah.edit', $d->id) }}">
                                                         <i class="fas fa-pencil-alt">
                                                         </i>
 
                                                     </a>
+
+                                                <form action="{{ route('wilayah.destroy', $d->id) }}" method="POST"
+                                                    onclick="return confirm('Apakah Anda Yakin Menghapus Data?');" style="display:contents !important;">
+                                                    
                                                     @method('delete')
                                                     @csrf
                                                     <input type="hidden" value="DELETE">
@@ -81,7 +82,7 @@
                             <div class="form-group">
                                 <label class="font-weight-bold">Kota</label>
                                 <input type="text" class="form-control @error('kota') is-invalid @enderror" name="kota"
-                                    value="{{ old('kota') }}" placeholder="Masukkan Nama">
+                                    value="{{ old('kota') }}" placeholder="Masukkan Kota">
 
                                 <!-- error message untuk title -->
                                 @error('kota')
@@ -93,7 +94,7 @@
                             <div class="form-group">
                                 <label class="font-weight-bold">Kecamatan</label>
                                 <input type="text" class="form-control @error('kc') is-invalid @enderror" name="kc"
-                                    value="{{ old('kc') }}" placeholder="Masukkan Jabatab">
+                                    value="{{ old('kc') }}" placeholder="Masukkan Kecamatan">
 
                                 <!-- error message untuk title -->
                                 @error('kc')
@@ -106,7 +107,7 @@
                             <div class="form-group">
                                 <label class="font-weight-bold">Kabupaten</label>
                                 <input type="text" class="form-control @error('kb') is-invalid @enderror" name="kb"
-                                    value="{{ old('kb') }}" placeholder="Masukkan nilai">
+                                    value="{{ old('kb') }}" placeholder="Masukkan Kabupaten">
 
                                 <!-- error message untuk title -->
                                 @error('kb')
@@ -119,7 +120,7 @@
                             <div class="form-group">
                                 <label class="font-weight-bold">Nama Jalan </label>
                                 <input type="text" class="form-control @error('dh') is-invalid @enderror" name="dh"
-                                    value="{{ old('dh') }}" placeholder="Masukkan Jabatab">
+                                    value="{{ old('dh') }}" placeholder="Masukkan Nama Jalan">
 
                                 <!-- error message untuk title -->
                                 @error('dh')

@@ -30,16 +30,18 @@
                                             <td>{{ $d->pas }}</td>
                                             <td>{{ $d->tdk }}</td>
                                             <td>{{ $d->wak }}</td>
-                                            <td>
-
-                                                <form action="{{ route('tindakan.destroy', $d->id) }}" method="POST"
-                                                    onclick="return confirm('Apakah Anda Yakin Menghapus Data?');">
-                                                    <a class="btn btn-info btn-sm"
+                                            <td>    
+                                                
+                                            <a class="btn btn-info btn-sm"
                                                         href="{{ route('tindakan.edit', $d->id) }}">
                                                         <i class="fas fa-pencil-alt">
                                                         </i>
 
                                                     </a>
+
+                                                <form action="{{ route('tindakan.destroy', $d->id) }}" method="POST"
+                                                    onclick="return confirm('Apakah Anda Yakin Menghapus Data?');" style="display:contents !important;">
+                                                    
                                                     @method('delete')
                                                     @csrf
                                                     <input type="hidden" value="DELETE">

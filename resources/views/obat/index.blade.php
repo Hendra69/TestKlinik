@@ -27,14 +27,15 @@
                                         <td>{{ $d->stok }}</td>
                                         <td>{{ $d->hrg }}</td>
                                         <td>
-
-                                            <form action="{{ route('obat.destroy', $d->id) }}" method="POST"
-                                                onclick="return confirm('Apakah Anda Yakin Menghapus Data?');">
-                                                <a class="btn btn-info btn-sm" href="{{ route('obat.edit', $d->id) }}">
+                                            <a class="btn btn-info btn-sm" href="{{ route('obat.edit', $d->id) }}">
                                                     <i class="fas fa-pencil-alt">
                                                     </i>
 
                                                 </a>
+
+                                            <form action="{{ route('obat.destroy', $d->id) }}" method="POST"
+                                                onclick="return confirm('Apakah Anda Yakin Menghapus Data?');" style="display:contents !important;">
+                                                
                                                 @method('delete')
                                                 @csrf
                                                 <input type="hidden" value="DELETE">

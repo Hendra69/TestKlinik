@@ -22,10 +22,10 @@
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="../../index2.html" class="h1">Wellcome In Klinik </a>
+                <a href="../../index2.html" class="h1"><b>SeLamat Datang</b><br>Di Web Klinik </a>
             </div>
             <div class="card-body">
-                <p class="login-box-msg">Sign in to start your session</p>
+                <p class="login-box-msg">Silahkan Login</p>
 
                 <form method="POST" action="{{ route('login') }}">
                     @csrf

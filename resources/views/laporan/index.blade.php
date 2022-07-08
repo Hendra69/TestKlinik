@@ -22,7 +22,7 @@
    let trx = <?php echo json_encode($trx)?>;
     Highcharts.chart('container', {
         title: {
-            text: 'Pasien PerTahun'
+            text: 'Laporan Pasien'
         },
         subtitle: {
             text: 'Source: positronx.io'
@@ -34,7 +34,7 @@
         },
         yAxis: {
             title: {
-                text: 'Number of New Users'
+                text: 'Number of New Pasien'
             }
         },
         legend: {
